@@ -1,2 +1,26 @@
-<div>Main App</div>
-<router-outlet></router-outlet>
+<div class="container">
+    <header>
+        <div class="logo">
+            Soumyadip's Portfolio
+        </div>
+        <nav class="mainHeader">
+            <ul class="mainHeaderList">
+                <li class="mainHeaderListItem">Home</li>
+                <li class="mainHeaderListItem">Contact us</li>
+                <li class="mainHeaderListItem">About us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="sidebar">sidebar goes here...</div>
+        <main>
+            Main Content goes here....
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+
+    <footer>
+        Footer Goes here....
+    </footer>
+</div>

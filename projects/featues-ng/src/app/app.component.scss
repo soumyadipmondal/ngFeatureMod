@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3);
+    header {
+        background-color: #256789;
+        color: #fff;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto auto ;
+
+        div.logo {
+            margin-top: 15px;
+        }
+
+        nav.mainHeader {
+           ul.mainHeaderList {
+            list-style-type: none;
+            float: right;
+            
+            li.mainHeaderListItem {
+                display: inline;
+                padding: 10px;
+            }
+           }
+        }
+    }
+
+}
