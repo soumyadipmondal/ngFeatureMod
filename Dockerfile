@@ -1,5 +1,4 @@
 #stage1
-
 FROM node:latest as builder
 WORKDIR /ng/app
 COPY . .
