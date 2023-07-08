@@ -8,4 +8,4 @@ RUN npm run build --prod
 
 #stage 2
 FROM nginx:alpine
-COPY --from=node /ng/app/dist/featues-ng /usr/share/nginx/html
+COPY --from=builder /ng/app/dist/featues-ng /usr/share/nginx/html
