@@ -1,19 +1,20 @@
 .container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3);
     header {
-        background-color: #256789;
+        //background-color: #256789;
+        background-image: linear-gradient(to bottom right, green, yellow);
         color: #fff;
         padding: 10px;
         display: grid;
         grid-template-columns: auto auto ;
 
         div.logo {
-            margin-top: 15px;
+            display: grid;
+            align-content: center;
         }
 
         nav.mainHeader {
+            color: #333;
            ul.mainHeaderList {
             list-style-type: none;
             float: right;
@@ -26,4 +27,21 @@
         }
     }
 
+}
+
+@media only screen and (max-width: 400px) {
+    .container{
+        header {
+            display: block;
+                div.logo {
+                    display: grid;
+                    justify-content: center;
+                }
+        
+                nav.mainHeader {
+                    display: none;
+                }
+            }
+    }
+    
 }
